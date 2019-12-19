@@ -1,0 +1,33 @@
+body {
+	overflow: hidden;
+}
+
+/* css for computer */
+
+@media only screen and (min-width: 1125px)  {
+
+	#videoElement {
+		width: 100vw;
+		height: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scaleX(-1) scale(2);
+		filter: blur(150px) hue-rotate(-30deg) contrast(2) brightness(2);
+	}
+}
+
+/* css for mobile */
+
+@media only screen and (max-width: 1125px)  {
+
+	#videoElement {
+		height: 100vh;
+		width: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(2);
+		filter: blur(150px) hue-rotate(-30deg) contrast(2) brightness(2);
+	}
+}
